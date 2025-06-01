@@ -3,6 +3,10 @@
 require 'sinatra'
 require 'json'
 
+configure :production do
+  disable :protection
+end
+
 configure :test do
   disable :protection
 end
