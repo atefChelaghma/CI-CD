@@ -1,7 +1,10 @@
 require 'sinatra'
 require 'json'
 
-# A simple GET endpoint
+configure :test do
+    disable :protection
+  end
+  
 get '/api/hello' do
   content_type :json
   { message: 'Hello from Ruby REST API!' }.to_json
