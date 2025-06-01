@@ -3,7 +3,10 @@ GEM
   specs:
     ast (2.4.3)
     base64 (0.3.0)
+    childprocess (5.1.0)
+      logger (~> 1.5)
     diff-lcs (1.6.2)
+    iniparse (1.5.0)
     json (2.12.2)
     language_server-protocol (3.17.0.5)
     lint_roller (1.1.0)
@@ -11,6 +14,10 @@ GEM
     mustermann (3.0.3)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.7.4)
+    overcommit (0.67.1)
+      childprocess (>= 0.6.3, < 6)
+      iniparse (~> 1.4)
+      rexml (>= 3.3.9)
     parallel (1.27.0)
     parser (3.3.8.0)
       ast (~> 2.4.1)
@@ -33,6 +40,7 @@ GEM
       rack (>= 3)
     rainbow (3.1.1)
     regexp_parser (2.10.0)
+    rexml (3.4.1)
     rspec (3.13.1)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
@@ -80,6 +88,7 @@ PLATFORMS
 
 DEPENDENCIES
   json
+  overcommit
   puma
   rack
   rack-test

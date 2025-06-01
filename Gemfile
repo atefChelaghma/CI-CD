@@ -15,3 +15,7 @@ end
 group :development, :test do
   gem 'rubocop', require: false
 end
+
+group :development do
+  gem 'overcommit'
+end
